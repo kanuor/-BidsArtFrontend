@@ -3,7 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>Bidsart</title>
+	<link
+	rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+	integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+	crossorigin="anonymous"
+  />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	
 </head>
 <body>
       <!--Navigation Bar-->
@@ -36,11 +44,34 @@
        	  	<a class="nav-link text-light" href="">Rooms</a>
 
        	  </li>
-          <button type="button" class="btn btn-light">Login</button>\
+          <button type="button" class="btn login-btn btn-light">Login</button>\
           <button type="button" class="btn btn-light">SignUp</button>
 
-	 	
-	 </nav>
 
+	 </nav>
+	 <div class="popup">
+		 <div class="popup-content">
+			<i class="fas close-button fa-times"></i>
+			 <h4 id="heading">BidsArt</h4>
+          <form action="">
+			<div class="first-box">
+			<label class="Email" for="Email-id">Email</label>
+			<input class="new-box" type="text" placeholder="Enter your email" name="Email-id">
+			<small class="error-message">Please enter a valid E-mail</small>
+		    </div>
+		    <div class="second-box">
+			<label class="Password" for="password">Password</label>
+			<input class="new-box" type="password" placeholder="Enter your password" name="paswword">
+            <small class="error-message">Please enter a valid password</small>
+			</div>
+			<button class='btn mybtn btn-dark shadow-none'>LOG IN</button>
+			<div id="forget-link">
+				<a class="forgot" href="#">Forgot Password?</a>
+			</div>
+		
+		  </form>
+		 </div>
+	 </div> 
+    <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
